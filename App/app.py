@@ -223,7 +223,8 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 
 /* ── Hide Streamlit defaults ── */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer, { visibility: hidden; }
+.stAppDeployButton { display: none; } 
 .block-container { padding-top: 2rem; }
 </style>
 """, unsafe_allow_html=True)
