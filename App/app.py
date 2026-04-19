@@ -982,7 +982,7 @@ elif page == "about":
             <div style="font-size:12px;color:#64748b;margin-top:4px;">Natural Language Processing</div>
             <div style="margin-top:12px;font-size:12px;color:#475569;line-height:1.8;">
                 Informatics Engineering · Faculty of Computer Science<br>
-                Universitas Sriwijaya · 2026
+                Universitas Sriwijaya
             </div>
         </div>
         """, unsafe_allow_html=True)
