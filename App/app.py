@@ -740,8 +740,15 @@ elif page == "perclass":
         ],
         showscale=True,
     )
+    # fig_heat.update_layout(
+    #     **PLOTLY_LAYOUT,
+    #     height=300,
+    #     margin=dict(l=120, r=10, t=20, b=10),
+    # )
+
+    fig_heat.update_layout(**PLOTLY_LAYOUT)
+
     fig_heat.update_layout(
-        **PLOTLY_LAYOUT,
         height=300,
         margin=dict(l=120, r=10, t=20, b=10),
     )
