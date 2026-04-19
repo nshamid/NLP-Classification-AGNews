@@ -246,66 +246,66 @@ MODEL_ICONS = {
 # Overall metrics
 METRICS = {
     "Naive Bayes": {
-        "accuracy":  0.9011,
-        "precision": 0.9013,
-        "recall":    0.9011,
-        "f1":        0.9011,
+        "accuracy":  0.8917,
+        "precision": 0.8912,
+        "recall":    0.8917,
+        "f1":        0.8912,
     },
     "SVM": {
-        "accuracy":  0.9238,
-        "precision": 0.9240,
-        "recall":    0.9238,
-        "f1":        0.9238,
+        "accuracy":  0.9130,
+        "precision": 0.9130,
+        "recall":    0.9130,
+        "f1":        0.9129,
     },
     "BERT": {
-        "accuracy":  0.9461,
-        "precision": 0.9463,
-        "recall":    0.9461,
-        "f1":        0.9461,
+        "accuracy":  0.9450,
+        "precision": 0.9452,
+        "recall":    0.9450,
+        "f1":        0.9450,
     },
 }
 
 # Per-class F1 scores
 CLASS_F1 = {
     "Naive Bayes": {
-        "World":    0.9071,
-        "Sports":   0.9721,
-        "Business": 0.8625,
-        "Sci/Tech": 0.8629,
+        "World":    0.90,
+        "Sports":   0.96,
+        "Business": 0.85,
+        "Sci/Tech": 0.86,
     },
     "SVM": {
-        "World":    0.9302,
-        "Sports":   0.9825,
-        "Business": 0.8985,
-        "Sci/Tech": 0.8841,
+        "World":    0.92,
+        "Sports":   0.97,
+        "Business": 0.88,
+        "Sci/Tech": 0.89,
     },
     "BERT": {
-        "World":    0.9509,
-        "Sports":   0.9891,
-        "Business": 0.9245,
-        "Sci/Tech": 0.9200,
+        "World":    0.96,
+        "Sports":   0.99,
+        "Business": 0.92,
+        "Sci/Tech": 0.92,
     },
 }
 
 # Confusion matrices (rows=actual, cols=predicted)
 CM = {
     "Naive Bayes": np.array([
-        [1688,  46,  106,  60],
-        [  16, 1844,   22,  18],
-        [  98,  18, 1618, 166],
-        [  80,  19,  168, 1633],
+        [1690,  69,  90,  51],
+        [  22, 1857,   8,  13],
+        [  75,  24, 1582, 219],
+        [  75,  32,  145, 1648],
     ]),
     "SVM": np.array([
-        [1740,  28,   89,  43],
-        [   8, 1866,   14,  12],
-        [  62,  10, 1690, 138],
-        [  54,  11,  136, 1699],
+        [1713,  57,   80,  50],
+        [   14, 1865,   12,  9],
+        [  51,  18, 1670, 161],
+        [  55,  17,  137, 1691],
     ]),
     "BERT": np.array([
-        [1792,  14,   72,  22],
-        [   4, 1892,    5,   9],
-        [  43,   7, 1768,  82],
-        [  38,   6,   97, 1759],
+        [1812,  10,   42,  36],
+        [   12, 1875,    6,   7],
+        [  34,   7, 1723,  136],
+        [  26,   9,   93, 1772],
     ]),
 }
 
@@ -313,18 +313,18 @@ CM = {
 TRAINING_INFO = {
     "Naive Bayes": {
         "algorithm":    "Multinomial Naive Bayes",
-        "vectorizer":   "TF-IDF (max_features=50,000)",
+        "vectorizer":   "TF-IDF (max_features=10,000)",
         "params":       "alpha=1.0 (Laplace smoothing)",
-        "train_time":   "~3 seconds",
+        "train_time":   "~5 seconds",
         "inference":    "< 1ms / sample",
         "train_size":   "120,000 samples",
         "test_size":    "7,600 samples",
     },
     "SVM": {
         "algorithm":    "Linear SVM (LinearSVC)",
-        "vectorizer":   "TF-IDF (max_features=50,000)",
+        "vectorizer":   "TF-IDF (max_features=10,000)",
         "params":       "C=1.0, max_iter=1,000",
-        "train_time":   "~45 seconds",
+        "train_time":   "~15 seconds",
         "inference":    "< 1ms / sample",
         "train_size":   "120,000 samples",
         "test_size":    "7,600 samples",
@@ -332,8 +332,8 @@ TRAINING_INFO = {
     "BERT": {
         "algorithm":    "BERT-base-uncased (Fine-tuned)",
         "vectorizer":   "WordPiece Tokenizer (max_len=128)",
-        "params":       "lr=2e-5, epochs=3, batch=32",
-        "train_time":   "~45 minutes (GPU)",
+        "params":       "lr=2e-5, epochs=2, batch=16",
+        "train_time":   "~60 minutes (GPU)",
         "inference":    "~12ms / sample",
         "train_size":   "120,000 samples",
         "test_size":    "7,600 samples",
