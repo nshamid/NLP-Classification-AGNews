@@ -390,7 +390,7 @@ def fmt(v): return f"{v*100:.2f}%"
 with st.sidebar:
     st.markdown("""
     <div class="sidebar-logo">
-        <span class="logo-icon">🧠</span>
+        <span class="logo-icon">&#129504;</span>
         <div class="logo-title">NLP Benchmark</div>
         <div class="logo-sub">AG News · Text Classification</div>
     </div>
