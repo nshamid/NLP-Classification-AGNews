@@ -968,6 +968,64 @@ elif page == "about":
         </div>
         """, unsafe_allow_html=True)
 
+    # ── Informasi Kelompok ──
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown('<div class="section-header"><div class="title">Tim Pengembang</div><div class="badge">Kelompok 4</div></div>', unsafe_allow_html=True)
+
+    col_dosen, col_prodi = st.columns([1, 1])
+
+    with col_dosen:
+        st.markdown("""
+        <div class="metric-card">
+            <div style="font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:6px;">🎓 Dosen Pengampu</div>
+            <div style="color:#06b6d4;font-size:14px;font-weight:500;">Novi Yusliani, S.Kom, M.T.</div>
+            <div style="margin-top:12px;font-size:13px;color:#475569;">Program Studi Teknik Informatika<br>Fakultas Ilmu Komputer<br>Universitas Sriwijaya · 2026</div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    with col_prodi:
+        st.markdown("""
+        <div class="metric-card">
+            <div style="font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:12px;">🏛️ Institusi</div>
+            <div style="text-align:center;">
+                <div style="font-size:13px;font-weight:700;color:#cbd5e1;letter-spacing:0.5px;">PROGRAM STUDI TEKNIK INFORMATIKA</div>
+                <div style="font-size:12px;color:#64748b;margin-top:2px;">FAKULTAS ILMU KOMPUTER</div>
+                <div style="font-size:13px;font-weight:600;color:#8b5cf6;margin-top:4px;">UNIVERSITAS SRIWIJAYA</div>
+                <div style="font-size:12px;color:#475569;margin-top:2px;">2026</div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+
+    st.markdown("<br>", unsafe_allow_html=True)
+
+    members = [
+        ("Andini Marsha Daniswara",      "09021282328033"),
+        ("Fransisca Stevanie Ekawati",   "09021382328127"),
+        ("Nabilah Shamid",               "09021382328147"),
+        ("Indrina Nur Chairunnisya",     "09021382328157"),
+        ("Shalaisya Fattiha Ramadhani",  "09021382328161"),
+        ("Afny Chiara Wildani Nst",      "09021382328167"),
+    ]
+
+    st.markdown("""
+    <div style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;
+                text-transform:uppercase;margin-bottom:12px;">👥 Anggota Kelompok</div>
+    """, unsafe_allow_html=True)
+
+    cols = st.columns(3)
+    icons = ["🌟", "✨", "💡", "🔬", "🚀", "⚡"]
+    for i, (name, nim) in enumerate(members):
+        with cols[i % 3]:
+            st.markdown(f"""
+            <div style="background:#161d2e;border:1px solid #1e293b;border-radius:10px;
+                        padding:14px 16px;margin-bottom:10px;
+                        border-left:3px solid #8b5cf6;">
+                <div style="font-size:13px;font-weight:600;color:#f1f5f9;">{icons[i]} {name}</div>
+                <div style="font-size:11px;color:#475569;margin-top:4px;
+                            font-family:'JetBrains Mono',monospace;">{nim}</div>
+            </div>
+            """, unsafe_allow_html=True)
+
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align:center;color:#334155;font-size:12px;padding:20px 0;border-top:1px solid #1e293b;">
