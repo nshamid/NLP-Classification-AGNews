@@ -968,29 +968,33 @@ elif page == "about":
         </div>
         """, unsafe_allow_html=True)
 
-    # ── Informasi Kelompok ──
+    # ── Team Information ──
     st.markdown("<br>", unsafe_allow_html=True)
-    st.markdown('<div class="section-header"><div class="title">Tim Pengembang</div><div class="badge">Kelompok 4</div></div>', unsafe_allow_html=True)
+    st.markdown('<div class="section-header"><div class="title">Development Team</div><div class="badge">Group 4</div></div>', unsafe_allow_html=True)
 
     col_dosen, col_prodi = st.columns([1, 1])
 
     with col_dosen:
         st.markdown("""
         <div class="metric-card">
-            <div style="font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:6px;">🎓 Dosen Pengampu</div>
-            <div style="color:#06b6d4;font-size:14px;font-weight:500;">Novi Yusliani, S.Kom, M.T.</div>
-            <div style="margin-top:12px;font-size:13px;color:#475569;">Program Studi Teknik Informatika<br>Fakultas Ilmu Komputer<br>Universitas Sriwijaya · 2026</div>
+            <div style="font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:10px;">🎓 Course Lecturer</div>
+            <div style="color:#06b6d4;font-size:15px;font-weight:600;">Novi Yusliani, S.Kom, M.T.</div>
+            <div style="font-size:12px;color:#64748b;margin-top:4px;">Natural Language Processing</div>
+            <div style="margin-top:12px;font-size:12px;color:#475569;line-height:1.8;">
+                Informatics Engineering · Faculty of Computer Science<br>
+                Universitas Sriwijaya · 2026
+            </div>
         </div>
         """, unsafe_allow_html=True)
 
     with col_prodi:
         st.markdown("""
         <div class="metric-card">
-            <div style="font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:12px;">🏛️ Institusi</div>
+            <div style="font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:12px;">🏛️ Institution</div>
             <div style="text-align:center;">
-                <div style="font-size:13px;font-weight:700;color:#cbd5e1;letter-spacing:0.5px;">PROGRAM STUDI TEKNIK INFORMATIKA</div>
-                <div style="font-size:12px;color:#64748b;margin-top:2px;">FAKULTAS ILMU KOMPUTER</div>
-                <div style="font-size:13px;font-weight:600;color:#8b5cf6;margin-top:4px;">UNIVERSITAS SRIWIJAYA</div>
+                <div style="font-size:13px;font-weight:700;color:#cbd5e1;letter-spacing:0.5px;">INFORMATICS ENGINEERING</div>
+                <div style="font-size:12px;color:#64748b;margin-top:2px;">Faculty of Computer Science</div>
+                <div style="font-size:13px;font-weight:600;color:#8b5cf6;margin-top:4px;">Universitas Sriwijaya</div>
                 <div style="font-size:12px;color:#475569;margin-top:2px;">2026</div>
             </div>
         </div>
@@ -1009,7 +1013,7 @@ elif page == "about":
 
     st.markdown("""
     <div style="font-size:13px;font-weight:600;color:#64748b;letter-spacing:1px;
-                text-transform:uppercase;margin-bottom:12px;">👥 Anggota Kelompok</div>
+                text-transform:uppercase;margin-bottom:12px;">👥 Group Members</div>
     """, unsafe_allow_html=True)
 
     cols = st.columns(3)
