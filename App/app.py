@@ -420,7 +420,7 @@ if page == "overview":
     with col_w:
         st.markdown("""
         <div class="winner-card">
-            <div style="font-size:32px; margin-bottom:8px;">🏆</div>
+            <div style="font-size:32px; margin-bottom:8px; line-height:1.2;">🏆</div>
             <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#8b5cf6; font-weight:600; margin-bottom:4px;">Best Overall</div>
             <div style="font-size:22px; font-weight:700; color:#f1f5f9;">BERT</div>
             <div style="font-size:28px; font-weight:700; color:#8b5cf6; margin-top:4px;">94.50%</div>
@@ -431,7 +431,7 @@ if page == "overview":
     with col_s:
         st.markdown("""
         <div class="metric-card">
-            <div style="font-size:24px; margin-bottom:6px;">⚡</div>
+            <div style="font-size:24px; margin-bottom:6px; line-height:1.2;">⚡</div>
             <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#f59e0b; font-weight:600; margin-bottom:4px;">Runner-up</div>
             <div style="font-size:20px; font-weight:700; color:#f1f5f9;">SVM</div>
             <div style="font-size:26px; font-weight:700; color:#f59e0b; margin-top:4px;">91.30%</div>
@@ -442,7 +442,7 @@ if page == "overview":
     with col_b:
         st.markdown("""
         <div class="metric-card">
-            <div style="font-size:24px; margin-bottom:6px;">📊</div>
+            <div style="font-size:24px; margin-bottom:6px; line-height:1.2;">📊</div>
             <div style="font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#06b6d4; font-weight:600; margin-bottom:4px;">Baseline</div>
             <div style="font-size:20px; font-weight:700; color:#f1f5f9;">Naive Bayes</div>
             <div style="font-size:26px; font-weight:700; color:#06b6d4; margin-top:4px;">89.17%</div>
