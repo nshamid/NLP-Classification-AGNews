@@ -105,7 +105,7 @@ html, body, [data-testid="stAppViewContainer"] {
     font-size: 32px;
     font-weight: 700;
     color: var(--text-primary);
-    line-height: 1;
+    line-height: 1.2;
     margin-bottom: 4px;
     font-variant-numeric: tabular-nums;
 }
