@@ -225,17 +225,30 @@ html, body, [data-testid="stAppViewContainer"] {
 /* ── Hide Streamlit defaults ── */
 #MainMenu, footer { visibility: hidden; }
 .stAppDeployButton { display: none; } 
+
+/* Buat background header transparan */
 [data-testid="stHeader"] {
     background-color: transparent !important;
 }
+
+/* Sembunyikan deretan menu di kanan atas */
 [data-testid="stToolbar"] {
     visibility: hidden !important;
 }
+
+/* --- TAHAP BARU: Paksa tombol BUKA navigasi selalu muncul --- */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    opacity: 1 !important; /* Menghilangkan efek transparan bawaan Streamlit */
+    visibility: visible !important;
+    z-index: 999999 !important; /* Memastikan tombol tidak tertimpa elemen lain */
+}
+
+/* Beri jarak atas agar teks judul tidak bertabrakan */
 .block-container { 
-    padding-top: 4rem !important; /* Naikkan dari 2rem menjadi 4rem */
+    padding-top: 4rem !important; 
 }
 </style>
-""", unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────
 # DATA — Hasil evaluasi model
