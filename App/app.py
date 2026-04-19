@@ -500,9 +500,9 @@ if page == "overview":
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div class="info-box">
-        💡 <strong>Key Takeaway:</strong> BERT outperforms classical ML models by a significant margin (+4.5% over Naive Bayes),
+        💡 <strong>Key Takeaway:</strong> BERT outperforms classical ML models by a significant margin (+5.33% over Naive Bayes),
         demonstrating the power of pre-trained transformer representations. However, SVM offers an excellent speed–accuracy
-        trade-off, achieving 92.38% accuracy in just seconds of training.
+        trade-off, achieving 91.30% accuracy in just seconds of training.
     </div>
     """, unsafe_allow_html=True)
 
