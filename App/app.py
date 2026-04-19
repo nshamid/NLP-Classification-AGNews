@@ -979,7 +979,6 @@ elif page == "about":
         <div class="metric-card">
             <div style="font-size:15px;font-weight:700;color:#f1f5f9;margin-bottom:10px;">🎓 Course Lecturer</div>
             <div style="color:#06b6d4;font-size:15px;font-weight:600;">Novi Yusliani, S.Kom, M.T.</div>
-            <div style="font-size:12px;color:#64748b;margin-top:4px;">Natural Language Processing</div>
             <div style="margin-top:12px;font-size:12px;color:#475569;line-height:1.8;">
                 Informatics Engineering · Faculty of Computer Science<br>
                 Universitas Sriwijaya
