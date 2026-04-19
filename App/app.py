@@ -223,9 +223,17 @@ html, body, [data-testid="stAppViewContainer"] {
 }
 
 /* ── Hide Streamlit defaults ── */
-#MainMenu, footer, header { visibility: hidden; }
+#MainMenu, footer { visibility: hidden; }
 .stAppDeployButton { display: none; } 
-.block-container { padding-top: 2rem; }
+[data-testid="stHeader"] {
+    background-color: transparent !important;
+}
+[data-testid="stToolbar"] {
+    visibility: hidden !important;
+}
+.block-container { 
+    padding-top: 4rem !important; /* Naikkan dari 2rem menjadi 4rem */
+}
 </style>
 """, unsafe_allow_html=True)
 
