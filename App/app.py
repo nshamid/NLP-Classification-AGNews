@@ -225,30 +225,9 @@ html, body, [data-testid="stAppViewContainer"] {
 /* ── Hide Streamlit defaults ── */
 #MainMenu, footer { visibility: hidden; }
 .stAppDeployButton { display: none; } 
-
-/* Buat background header transparan */
-[data-testid="stHeader"] {
-    background-color: transparent !important;
-}
-
-/* Sembunyikan deretan menu di kanan atas */
-[data-testid="stToolbar"] {
-    visibility: hidden !important;
-}
-
-/* --- TAHAP BARU: Paksa tombol BUKA navigasi selalu muncul --- */
-[data-testid="collapsedControl"] {
-    display: flex !important;
-    opacity: 1 !important; /* Menghilangkan efek transparan bawaan Streamlit */
-    visibility: visible !important;
-    z-index: 999999 !important; /* Memastikan tombol tidak tertimpa elemen lain */
-}
-
-/* Beri jarak atas agar teks judul tidak bertabrakan */
-.block-container { 
-    padding-top: 4rem !important; 
-}
+.block-container { padding-top: 2rem; }
 </style>
+""", unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────
 # DATA — Hasil evaluasi model
@@ -390,7 +369,7 @@ def fmt(v): return f"{v*100:.2f}%"
 with st.sidebar:
     st.markdown("""
     <div class="sidebar-logo">
-        <span class="logo-icon">&#129504;</span>
+        <span class="logo-icon">🧠</span>
         <div class="logo-title">NLP Benchmark</div>
         <div class="logo-sub">AG News · Text Classification</div>
     </div>
