@@ -226,6 +226,14 @@ html, body, [data-testid="stAppViewContainer"] {
 #MainMenu, footer { visibility: hidden; }
 .stAppDeployButton { display: none; } 
 .block-container { padding-top: 2rem; }
+
+header[data-testid="stHeader"] {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background: transparent !important;
+}
+[data-testid="stDecoration"] {
+    display: none;
+}
 </style>
 """, unsafe_allow_html=True)
 
