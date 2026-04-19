@@ -661,7 +661,6 @@ elif page == "confusion":
         yaxis=dict(tickfont=dict(size=12, color="#94a3b8")),
     )
 
-    )
     for ann in fig_cm.layout.annotations:
         ann.font.size = 14
         ann.font.color = "#f1f5f9"
