@@ -876,7 +876,7 @@ elif page == "details":
     st.markdown("""
     <div class="info-box">
         ⏱️ <strong>Speed vs. Accuracy:</strong> The log scale reveals a dramatic training time difference.
-        Naive Bayes (3s) and SVM (45s) are orders of magnitude faster than BERT (~45 min), yet BERT delivers
+        Naive Bayes (~5s) and SVM (~15s) are orders of magnitude faster than BERT (~60 min), yet BERT delivers
         the highest accuracy. For production deployments, the right choice depends on latency constraints,
         available GPU resources, and accuracy requirements.
     </div>
