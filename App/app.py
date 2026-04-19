@@ -465,7 +465,8 @@ if page == "overview":
             fill='toself',
             name=model,
             line_color=color,
-            fillcolor=color.replace(")", ",0.1)").replace("rgb", "rgba") if "rgb" in color else color + "1a",
+            # fillcolor=color.replace(")", ",0.1)").replace("rgb", "rgba") if "rgb" in color else color + "1a",
+            fillcolor=f"rgba({int(color[1:3], 16)}, {int(color[3:5], 16)}, {int(color[5:7], 16)}, 0.1)",
             line_width=2,
         ))
     fig_radar.update_layout(
