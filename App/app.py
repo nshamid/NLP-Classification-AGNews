@@ -652,12 +652,15 @@ elif page == "confusion":
         zmin=0,
     )
 
+    fig_cm.update_layout(**PLOTLY_LAYOUT)
+    
     fig_cm.update_layout(
-        **PLOTLY_LAYOUT,
         height=480,
         margin=dict(l=100, r=10, t=40, b=100),
         xaxis=dict(side="bottom", tickfont=dict(size=12, color="#94a3b8")),
         yaxis=dict(tickfont=dict(size=12, color="#94a3b8")),
+    )
+
     )
     for ann in fig_cm.layout.annotations:
         ann.font.size = 14
