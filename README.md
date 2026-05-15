@@ -37,7 +37,7 @@ dataset_path = "/kaggle/input/your-dataset-folder-name"
 
 ```
 
-Notes
-All three models (Vision Transformer, ResNet50, and MobileNetV3) use the same dataset source.
-The dataset folder structure should not be modified to ensure compatibility with the data loading pipeline.
-GPU acceleration such as NVIDIA Tesla T4 is recommended for model training.
+### Notes
+- All three models (Vision Transformer, ResNet50, and MobileNetV3) use the same dataset source.
+- The dataset folder structure should not be modified to ensure compatibility with the data loading pipeline.
+- GPU acceleration such as NVIDIA Tesla T4 is recommended for model training.
