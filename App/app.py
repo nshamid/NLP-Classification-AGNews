@@ -1029,6 +1029,29 @@ elif page == "about":
             </div>
             """, unsafe_allow_html=True)
 
+    # ── Project Access & Documentation ──
+    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown('<div class="section-header"><div class="title">Project Access & Documentation</div><div class="badge">Open Source</div></div>', unsafe_allow_html=True)
+
+    col_gh, col_nb = st.columns(2)
+
+    with col_gh:
+        st.markdown("""
+        <a href="https://github.com/nshamid/NLP-Classification-AGNews" target="_blank"
+           style="text-decoration:none;">
+            <div class="metric-card" style="cursor:pointer;transition:all 0.2s ease;">
+                <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+                    <span style="font-size:28px;">🐙</span>
+                    <div>
+                        <div style="font-size:15px;font-weight:700;color:#f1f5f9;">GitHub Repository</div>
+                        <div style="font-size:11px;color:#475569;margin-top:2px;">nshamid / NLP-Classification-AGNews</div>
+                    </div>
+                </div>
+                <div style="font-size:13px;color:#64748b;line-height:1.6;margin-bottom:14px;">
+                    Source code, notebooks, trained models, and full project documentation.
+                </div>
+                <div style="display:inline-flex;align-items:center;gap:6px;
+
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
     <div style="text-align:center;color:#334155;font-size:12px;padding:20px 0;border-top:1px solid #1e293b;">
