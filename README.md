@@ -48,3 +48,95 @@ NLP-Classification-AGNews/
 │   └── SVM_Classification_AG_News.ipynb
 │
 └── README.md
+
+---
+
+## 🗂️ Dataset
+
+**AG News Corpus** — a benchmark dataset for topic classification in NLP.
+
+| Property | Detail |
+|----------|--------|
+| Source | [Hugging Face Datasets](https://huggingface.co/datasets/ag_news) |
+| Train Set | 120,000 samples (30,000 × 4 classes) |
+| Test Set | 7,600 samples (1,900 × 4 classes) |
+| Classes | World · Sports · Business · Sci/Tech |
+| Balance | Perfectly balanced (25% each) |
+| Input | Title + Description concatenated |
+
+---
+
+## 🤖 Models
+
+### 1. 📊 Naive Bayes (Baseline)
+- **Algorithm:** Multinomial Naive Bayes
+- **Vectorizer:** TF-IDF (`max_features=50,000`)
+- **Smoothing:** Laplace (`alpha=1.0`)
+- **Training Time:** ~3 seconds (CPU)
+- **Accuracy:** 89.17%
+
+### 2. ⚡ Support Vector Machine
+- **Algorithm:** Linear SVM (`LinearSVC`)
+- **Vectorizer:** TF-IDF (`max_features=50,000`)
+- **Hyperparameter:** `C=1.0`, `max_iter=1000`
+- **Training Time:** ~45 seconds (CPU)
+- **Accuracy:** 91.30%
+
+### 3. 🧠 BERT base uncased
+- **Model:** `bert-base-uncased` (Hugging Face)
+- **Tokenizer:** WordPiece (`max_length=128`)
+- **Fine-tuning:** `lr=2e-5`, `epochs=3`, `batch_size=32`
+- **Training Time:** ~45 minutes (GPU)
+- **Accuracy:** 94.50%
+
+---
+
+## 📈 Confusion Matrices
+
+<table>
+  <tr>
+    <td align="center"><b>Naive Bayes</b></td>
+    <td align="center"><b>SVM</b></td>
+    <td align="center"><b>BERT</b></td>
+  </tr>
+  <tr>
+    <td><img src="Images/Confusion Matrix - NB.png" width="280"/></td>
+    <td><img src="Images/Confusion Matrix - SVM.png" width="280"/></td>
+    <td><img src="Images/Confusion Matrix - BERT.png" width="280"/></td>
+  </tr>
+</table>
+
+---
+
+## 🖥️ Dashboard
+
+An interactive multi-page Streamlit dashboard is included for visual performance comparison.
+https://classification-agnews.streamlit.app/
+
+**Pages:**
+- 🏠 **Overview** — Model ranking, radar chart, summary table
+- 📊 **Metrics Comparison** — Grouped bar chart, per-metric deep-dive
+- 🔢 **Confusion Matrix** — Interactive heatmap (raw & normalized)
+- 📈 **Per-Class Analysis** — F1-score breakdown per category
+- 🔍 **Model Details** — Architecture info, speed vs accuracy trade-off
+- ℹ️ **About** — Dataset info, team, and course details
+
+### Running the Dashboard
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/nshamid/NLP-Classification-AGNews.git
+cd NLP-Classification-AGNews
+
+# 2. Install dependencies
+pip install -r App/requirements.txt
+
+# 3. Run the dashboard
+streamlit run App/app.py
+```
+
+> **Requirements:** Python 3.10+, pip
+
+---
+
+## ⚙️ Requirements
