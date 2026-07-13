@@ -48,6 +48,7 @@ NLP-Classification-AGNews/
 │   └── SVM_Classification_AG_News.ipynb
 │
 └── README.md
+.
 
 ---
 
@@ -121,22 +122,5 @@ https://classification-agnews.streamlit.app/
 - 🔍 **Model Details** — Architecture info, speed vs accuracy trade-off
 - ℹ️ **About** — Dataset info, team, and course details
 
-### Running the Dashboard
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/nshamid/NLP-Classification-AGNews.git
-cd NLP-Classification-AGNews
-
-# 2. Install dependencies
-pip install -r App/requirements.txt
-
-# 3. Run the dashboard
-streamlit run App/app.py
-```
-
-> **Requirements:** Python 3.10+, pip
 
 ---
-
-## ⚙️ Requirements
