@@ -1073,7 +1073,7 @@ elif page == "about":
                 Step-by-step training, evaluation, and analysis for each model.
             </div>
             <div style="display:flex;flex-direction:column;gap:8px;">
-                <a href="https://github.com/nshamid/NLP-Classification-AGNews/blob/main/Notebook/Naive_Bayes.ipynb"
+                <a href="https://colab.research.google.com/drive/14R2nczlS98gxk-uMQa4OfjRA-lvhnnrA?usp=sharing"
                    target="_blank" style="text-decoration:none;">
                     <div style="display:flex;align-items:center;gap:8px;padding:7px 12px;
                                 background:#0a0e1a;border:1px solid #1e293b;border-radius:8px;
@@ -1083,7 +1083,7 @@ elif page == "about":
                         <span style="margin-left:auto;font-size:11px;color:#475569;">→</span>
                     </div>
                 </a>
-                <a href="https://github.com/nshamid/NLP-Classification-AGNews/blob/main/Notebook/SVM_Classification_AG_News.ipynb"
+                <a href="https://colab.research.google.com/drive/19JcAt-CgDdWC-LvQK3tw3_L_rXy4CKks?usp=sharing"
                    target="_blank" style="text-decoration:none;">
                     <div style="display:flex;align-items:center;gap:8px;padding:7px 12px;
                                 background:#0a0e1a;border:1px solid #1e293b;border-radius:8px;">
@@ -1092,7 +1092,7 @@ elif page == "about":
                         <span style="margin-left:auto;font-size:11px;color:#475569;">→</span>
                     </div>
                 </a>
-                <a href="https://github.com/nshamid/NLP-Classification-AGNews/blob/main/Notebook/Klasifikasi_BERT.ipynb"
+                <a href="https://colab.research.google.com/drive/17scfUc2lp5I75gxPwEBnSMw6mrQDOFgA?usp=sharing"
                    target="_blank" style="text-decoration:none;">
                     <div style="display:flex;align-items:center;gap:8px;padding:7px 12px;
                                 background:#0a0e1a;border:1px solid #1e293b;border-radius:8px;">
