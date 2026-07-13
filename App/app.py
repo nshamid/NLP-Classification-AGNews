@@ -1029,7 +1029,7 @@ elif page == "about":
             </div>
             """, unsafe_allow_html=True)
 
-    # ── Project Access & Documentation ──
+# ── Project Access & Documentation ──
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown('<div class="section-header"><div class="title">Project Access & Documentation</div><div class="badge">Open Source</div></div>', unsafe_allow_html=True)
 
@@ -1051,6 +1051,59 @@ elif page == "about":
                     Source code, notebooks, trained models, and full project documentation.
                 </div>
                 <div style="display:inline-flex;align-items:center;gap:6px;
+                            background:rgba(139,92,246,0.15);border:1px solid rgba(139,92,246,0.3);
+                            border-radius:20px;padding:5px 14px;">
+                    <span style="font-size:11px;color:#8b5cf6;font-weight:600;">View Repository →</span>
+                </div>
+            </div>
+        </a>
+        """, unsafe_allow_html=True)
+
+    with col_nb:
+        st.markdown("""
+        <div class="metric-card">
+            <div style="display:flex;align-items:center;gap:12px;margin-bottom:12px;">
+                <span style="font-size:28px;">📓</span>
+                <div>
+                    <div style="font-size:15px;font-weight:700;color:#f1f5f9;">Notebooks</div>
+                    <div style="font-size:11px;color:#475569;margin-top:2px;">Jupyter · Google Colab</div>
+                </div>
+            </div>
+            <div style="font-size:13px;color:#64748b;line-height:1.6;margin-bottom:14px;">
+                Step-by-step training, evaluation, and analysis for each model.
+            </div>
+            <div style="display:flex;flex-direction:column;gap:8px;">
+                <a href="https://github.com/nshamid/NLP-Classification-AGNews/blob/main/Notebook/Naive_Bayes.ipynb"
+                   target="_blank" style="text-decoration:none;">
+                    <div style="display:flex;align-items:center;gap:8px;padding:7px 12px;
+                                background:#0a0e1a;border:1px solid #1e293b;border-radius:8px;
+                                transition:border-color 0.2s;">
+                        <span style="font-size:14px;">📊</span>
+                        <span style="font-size:12px;color:#cbd5e1;font-weight:500;">Naive Bayes Notebook</span>
+                        <span style="margin-left:auto;font-size:11px;color:#475569;">→</span>
+                    </div>
+                </a>
+                <a href="https://github.com/nshamid/NLP-Classification-AGNews/blob/main/Notebook/SVM_Classification_AG_News.ipynb"
+                   target="_blank" style="text-decoration:none;">
+                    <div style="display:flex;align-items:center;gap:8px;padding:7px 12px;
+                                background:#0a0e1a;border:1px solid #1e293b;border-radius:8px;">
+                        <span style="font-size:14px;">⚡</span>
+                        <span style="font-size:12px;color:#cbd5e1;font-weight:500;">SVM Notebook</span>
+                        <span style="margin-left:auto;font-size:11px;color:#475569;">→</span>
+                    </div>
+                </a>
+                <a href="https://github.com/nshamid/NLP-Classification-AGNews/blob/main/Notebook/Klasifikasi_BERT.ipynb"
+                   target="_blank" style="text-decoration:none;">
+                    <div style="display:flex;align-items:center;gap:8px;padding:7px 12px;
+                                background:#0a0e1a;border:1px solid #1e293b;border-radius:8px;">
+                        <span style="font-size:14px;">🧠</span>
+                        <span style="font-size:12px;color:#cbd5e1;font-weight:500;">BERT Notebook</span>
+                        <span style="margin-left:auto;font-size:11px;color:#475569;">→</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown("""
