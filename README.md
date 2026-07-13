@@ -121,5 +121,28 @@ https://classification-agnews.streamlit.app/
 - 🔍 **Model Details** — Architecture info, speed vs accuracy trade-off
 - ℹ️ **About** — Dataset info, team, and course details
 
+---
+
+## 👥 Development Team
+
+**Group 4 — Informatics Engineering, Universitas Sriwijaya**
+
+| Name | Student ID |
+|------|-----------|
+| Andini Marsha Daniswara | 09021282328033 |
+| Fransisca Stevanie Ekawati | 09021382328127 |
+| Nabilah Shamid | 09021382328147 |
+| Indrina Nur Chairunnisya | 09021382328157 |
+| Shalaisya Fattiha Ramadhani | 09021382328161 |
+| Afny Chiara Wildani Nst | 09021382328167 |
+
+**Course Lecturer:** Novi Yusliani, S.Kom, M.T.  
+**Course:** Natural Language Processing  
+**Institution:** Faculty of Computer Science, Universitas Sriwijaya  
+**Year:** 2026
 
 ---
+
+<div align="center">
+  <sub>NLP Final Project · AG News Text Classification · Universitas Sriwijaya 2026</sub>
+</div>
