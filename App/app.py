@@ -923,7 +923,7 @@ elif page == "about":
         <div class="metric-card">
             <div style="font-size:18px;font-weight:700;color:#f1f5f9;margin-bottom:16px;">🗂️ Dataset — AG News</div>
             <table style="width:100%;font-size:13px;border-collapse:collapse;">
-                <tr><td style="color:#475569;padding:6px 0;width:40%;">Source</td><td style="color:#cbd5e1;">Academic Torrents / Hugging Face</td></tr>
+                <tr><td style="color:#475569;padding:6px 0;width:40%;">Source</td><td style="color:#cbd5e1;">wangrongsheng / Hugging Face</td></tr>
                 <tr><td style="color:#475569;padding:6px 0;">Train Set</td><td style="color:#cbd5e1;">120,000 samples (30K × 4 classes)</td></tr>
                 <tr><td style="color:#475569;padding:6px 0;">Test Set</td><td style="color:#cbd5e1;">7,600 samples (1,900 × 4 classes)</td></tr>
                 <tr><td style="color:#475569;padding:6px 0;">Classes</td><td style="color:#cbd5e1;">World · Sports · Business · Sci/Tech</td></tr>
