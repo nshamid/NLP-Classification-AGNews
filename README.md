@@ -6,7 +6,7 @@
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-1.4+-F7931E?style=flat&logo=scikit-learn&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat)
 
-A comparative study of **Naive Bayes**, **Support Vector Machine (SVM)**, and **BERT base uncased** for multi-class text classification on the [AG News](https://huggingface.co/datasets/ag_news) dataset, complete with an interactive Streamlit dashboard for performance benchmarking.
+A comparative study of **Naive Bayes**, **Support Vector Machine (SVM)**, and **BERT base uncased** for multi-class text classification on the [AG News](https://huggingface.co/datasets/wangrongsheng/ag_news) dataset, complete with an interactive Streamlit dashboard for performance benchmarking.
 
 > 📚 Final Project — Natural Language Processing  
 > Informatics Engineering · Faculty of Computer Science · Universitas Sriwijaya · 2026
@@ -57,7 +57,7 @@ NLP-Classification-AGNews/
 
 | Property | Detail |
 |----------|--------|
-| Source | [Hugging Face Datasets](https://huggingface.co/datasets/ag_news) |
+| Source | [Hugging Face Datasets](https://huggingface.co/datasets/wangrongsheng/ag_news) |
 | Train Set | 120,000 samples (30,000 × 4 classes) |
 | Test Set | 7,600 samples (1,900 × 4 classes) |
 | Classes | World · Sports · Business · Sci/Tech |
@@ -111,7 +111,7 @@ NLP-Classification-AGNews/
 ## 🖥️ Dashboard
 
 An interactive multi-page Streamlit dashboard is included for visual performance comparison.
-https://classification-agnews.streamlit.app/
+(https://classification-agnews.streamlit.app/)
 
 **Pages:**
 - 🏠 **Overview** — Model ranking, radar chart, summary table
